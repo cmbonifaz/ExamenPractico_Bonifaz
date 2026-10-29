@@ -54,15 +54,13 @@ class _EmpleadoPantallaState extends State<EmpleadoPantalla> {
                 child: Column(
                   children: [
                     CampoNumero(
-                      etiqueta: 'Sueldo (\$)',
+                      etiqueta: 'Sueldo Base',
                       controller: sueldoController,
-                      icono: Icons.attach_money,
                     ),
                     SizedBox(height: 15),
                     CampoNumero(
                       etiqueta: 'Años de Antigüedad',
                       controller: antiguedadController,
-                      icono: Icons.calendar_today,
                     ),
                   ],
                 ),
@@ -107,7 +105,6 @@ class _EmpleadoPantallaState extends State<EmpleadoPantalla> {
             SizedBox(height: 25),
             ElevatedButton.icon(
               onPressed: calcular,
-              icon: Icon(Icons.calculate),
               label: Text('Calcular Bono'),
               style: ElevatedButton.styleFrom(
                 backgroundColor: Colors.blue,
@@ -121,4 +118,3 @@ class _EmpleadoPantallaState extends State<EmpleadoPantalla> {
     );
   }
 }
-

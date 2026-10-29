@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 import '../../model/empleado_model.dart';
 
 class ResultadoPantalla extends StatelessWidget {
@@ -42,7 +43,10 @@ class ResultadoPantalla extends StatelessWidget {
               elevation: 4,
               child: Column(
                 children: [
-                  dato('Sueldo Base', '\$${empleado.sueldo.toStringAsFixed(2)}'),
+                  dato(
+                    'Sueldo Base',
+                    '\$${empleado.sueldo.toStringAsFixed(2)}',
+                  ),
                   Divider(height: 1),
                   dato('Antigüedad', '${empleado.antiguedad} años'),
                   Divider(height: 1),
@@ -61,7 +65,6 @@ class ResultadoPantalla extends StatelessWidget {
                   dato(
                     'Sueldo Final',
                     '\$${empleado.sueldoFinal.toStringAsFixed(2)}',
-                    destacado: true,
                   ),
                 ],
               ),
@@ -85,4 +88,3 @@ class ResultadoPantalla extends StatelessWidget {
     );
   }
 }
-

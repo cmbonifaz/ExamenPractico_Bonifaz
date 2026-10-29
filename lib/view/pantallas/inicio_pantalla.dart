@@ -16,11 +16,6 @@ class InicioPantalla extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Icon(
-                Icons.business_center,
-                size: 100,
-                color: Colors.blue,
-              ),
               SizedBox(height: 20),
               Text(
                 'Sistema de Bono Mensual',
